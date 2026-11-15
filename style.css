@@ -226,19 +226,20 @@ body {
   .pos-3 { top: 76%; left: 30%; }
 }
 
-/* Stile finestra "Uscirà presto" con copertina */
 .coming-soon-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   text-align: center;
 }
 
 .cover-art {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 55vh;
+  object-fit: contain;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 0;
   display: block;
