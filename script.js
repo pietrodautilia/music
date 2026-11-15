@@ -1,20 +1,24 @@
-// 1. Selezioniamo tutte le icone e tutte le finestre
-const icone = document.querySelectorAll('.app-icon');
+const triggerBottoni = document.querySelectorAll('[data-target]');
 const finestre = document.querySelectorAll('.window');
 const bottoniChiudi = document.querySelectorAll('.close-btn');
+const finestraVideo = document.getElementById('win-video');
+const youtubeIframe = document.getElementById('youtube-iframe');
 
-// Funzione per chiudere tutte le finestre aperte
 function chiudiTutteLeFinestre() {
+  // Se la finestra video era aperta, ferma la riproduzione resettando l'iframe
+  if (finestraVideo && finestraVideo.classList.contains('aperta') && youtubeIframe) {
+    youtubeIframe.src = youtubeIframe.src;
+  }
   finestre.forEach(finestra => finestra.classList.remove('aperta'));
 }
 
-// 2. Quando clicchi su un'icona, apre la finestra corrispondente
-icone.forEach(icona => {
-  icona.addEventListener('click', (evento) => {
-    evento.stopPropagation(); // Evita che il click chiuda subito la finestra
+// Apertura finestre dalle cartelle o dalla taskbar
+triggerBottoni.forEach(bottone => {
+  bottone.addEventListener('click', (evento) => {
+    evento.stopPropagation();
     chiudiTutteLeFinestre();
-    
-    const idFinestra = icona.getAttribute('data-target');
+
+    const idFinestra = bottone.getAttribute('data-target');
     const finestraDaAprire = document.getElementById(idFinestra);
     if (finestraDaAprire) {
       finestraDaAprire.classList.add('aperta');
@@ -22,12 +26,12 @@ icone.forEach(icona => {
   });
 });
 
-// 3. Chiudi cliccando sulla X rossa
+// Chiusura con X
 bottoniChiudi.forEach(bottone => {
   bottone.addEventListener('click', chiudiTutteLeFinestre);
 });
 
-// 4. Chiudi cliccando sullo sfondo vuoto dello schermo o premendo ESC
+// Chiusura cliccando sullo sfondo nero o premendo ESC
 document.getElementById('desktop').addEventListener('click', (evento) => {
   if (evento.target.id === 'desktop') {
     chiudiTutteLeFinestre();
@@ -40,7 +44,7 @@ document.addEventListener('keydown', (evento) => {
   }
 });
 
-// 5. Orologio nella barra inferiore
+// Orologio
 function aggiornaOrologio() {
   const ora = new Date();
   const ore = String(ora.getHours()).padStart(2, '0');
