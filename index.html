@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Mio Nome Artista — Desktop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AREA PRINCIPALE DELLO SCHERMO -->
+  <main class="desktop" id="desktop">
+    
+    <!-- Griglia delle applicazioni -->
+    <div class="icone-grid">
+      <button class="app-icon" data-target="win-musica">
+        <span class="icona">🎵</span>
+        <span class="etichetta">Musica</span>
+      </button>
+
+      <button class="app-icon" data-target="win-testi">
+        <span class="icona">📓</span>
+        <span class="etichetta">Testi</span>
+      </button>
+
+      <button class="app-icon" data-target="win-live">
+        <span class="icona">📅</span>
+        <span class="etichetta">Live</span>
+      </button>
+
+      <button class="app-icon" data-target="win-contatti">
+        <span class="icona">✉️</span>
+        <span class="etichetta">Bio & Contatti</span>
+      </button>
+    </div>
+
+    <!-- FINESTRA 1: MUSICA -->
+    <section class="window" id="win-musica">
+      <div class="window-header">
+        <span>🎵 Player — Ultimi Brani</span>
+        <button class="close-btn" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="window-body">
+        <h3>Titolo Primo Singolo</h3>
+        <p>Prodotto nel mio home studio (2026)</p>
+        <!-- Quando avrai un file brano.mp3 nella cartella, funzionerà subito -->
+        <audio controls src="brano.mp3" style="width: 100%; margin: 10px 0;">
+          Il tuo browser non supporta l'audio.
+        </audio>
+        <p><a href="#" target="_blank">Ascolta su Spotify</a> · <a href="#" target="_blank">Bandcamp</a></p>
+      </div>
+    </section>
+
+    <!-- FINESTRA 2: TESTI -->
+    <section class="window" id="win-testi">
+      <div class="window-header">
+        <span>📓 Quaderno — Testi</span>
+        <button class="close-btn" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="window-body">
+        <h3>Titolo Primo Singolo</h3>
+        <p class="testo-canzone">
+          Qui puoi incollare le strofe e il ritornello,<br>
+          raccontare com'è nato il pezzo<br>
+          e inserire annotazioni per chi ascolta.
+        </p>
+      </div>
+    </section>
+
+    <!-- FINESTRA 3: LIVE -->
+    <section class="window" id="win-live">
+      <div class="window-header">
+        <span>📅 Calendario — Prossime Date</span>
+        <button class="close-btn" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="window-body">
+        <ul class="lista-date">
+          <li><strong>12 Dicembre</strong> — Torino, Club X (Ingresso libero)</li>
+          <li><strong>20 Gennaio</strong> — Milano, Spazio Y</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FINESTRA 4: BIO & CONTATTI -->
+    <section class="window" id="win-contatti">
+      <div class="window-header">
+        <span>✉️ Info — Bio & Contatti</span>
+        <button class="close-btn" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="window-body">
+        <p>Scrivi qui due righe sul tuo progetto musicale.</p>
+        <p><strong>Booking & Info:</strong> tuaemail@esempio.it</p>
+        <p><strong>Social:</strong> Instagram · YouTube · TikTok</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BARRA INFERIORE STILE SISTEMA OPERATIVO -->
+  <footer class="taskbar">
+    <div class="start-badge">▶ IL TUO NOME</div>
+    <div class="orologio" id="orologio">00:00</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
