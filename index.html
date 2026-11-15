@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>paradox dremas</title>
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>paradox dreams</title>
+  <meta property="og:title" content="paradox beats">
+  <meta property="og:description" content="Ascolta la mia musica!">
+  <!-- Opzionale: se carichi un'immagine copertina.jpg su GitHub, apparirà nell'anteprima -->
+  <meta property="og:image" content="https://pietrodautilia.github.io/music/copertina.jpg">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
   <!-- SCHERMO NERO -->
   <main class="desktop" id="desktop">
 
     <!-- LE 3 CARTELLE SPARSE -->
     <button class="app-icon pos-1" data-target="win-cartella1">
-      <span class="icona">📁</span>
+      <span class="icona">💿</span>
       <span class="etichetta">fading memories from a place i used to love</span>
     </button>
 
@@ -29,18 +33,14 @@
 
     <!-- FINESTRA CARTELLA 1 -->
     <section class="window" id="win-cartella1">
-      <div class="window-header">
-        <span>📁 fading memories from a place i used to love</span>
+    <div class="window-header">
+        <span>💿 fading memories from a place i used to love</span>
         <button class="close-btn" aria-label="Chiudi">✕</button>
-      </div>
-      <div class="window-body">
-        <div class="platform-list">
-          <a href="https://open.spotify.com" target="_blank" class="platform-link spotify">Spotify</a>
-          <a href="https://music.apple.com" target="_blank" class="platform-link apple">Apple Music</a>
-          <a href="https://www.youtube.com" target="_blank" class="platform-link youtube">YouTube</a>
-          <a href="https://bandcamp.com" target="_blank" class="platform-link bandcamp">Bandcamp</a>
-        </div>
-      </div>
+    </div>
+    <div class="window-body coming-soon-box">
+        <img src="copertina.jpg" alt="Cover for 'fading memories from a place i used to love'" class="cover-art">
+        <p class="coming-soon-text">Coming soon</p>
+    </div>
     </section>
 
     <!-- FINESTRA CARTELLA 2 -->
