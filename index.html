@@ -7,54 +7,66 @@
   <title>paradox dreams</title>
   <meta property="og:title" content="paradox beats">
   <meta property="og:description" content="Ascolta la mia musica!">
-  <!-- Opzionale: se carichi un'immagine copertina.jpg su GitHub, apparirà nell'anteprima -->
   <meta property="og:image" content="https://pietrodautilia.github.io/music/copertina.jpg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
+<body>
 
   <!-- SCHERMO NERO -->
   <main class="desktop" id="desktop">
 
     <!-- LE 3 CARTELLE SPARSE -->
     <button class="app-icon pos-1" data-target="win-cartella1">
-      <span class="icona">💿</span>
+      <img src="icona.musica.png" alt="" class="icona-img">
       <span class="etichetta">fading memories from a place i used to love</span>
     </button>
 
     <button class="app-icon pos-2" data-target="win-cartella2">
-      <span class="icona">📁</span>
+      <img src="icona.cartella.png" alt="" class="icona-img">
       <span class="etichetta">i hope you can hear the laughter from the next room</span>
     </button>
 
     <button class="app-icon pos-3" data-target="win-cartella3">
-      <span class="icona">📁</span>
+      <img src="icona.cartella.png" alt="" class="icona-img">
       <span class="etichetta">if you think life isn't that good, it's just because you're not paying enough attention.</span>
+    </button>
+
+    <!-- ICONA BLOCCO NOTE -->
+    <button class="app-icon pos-4" data-target="win-notepad">
+      <img src="icona.note.png" alt="" class="icona-img">
+      <span class="etichetta">paradox dreams</span>
+    </button>
+
+    <!-- ICONA VIDEO -->
+    <button class="app-icon pos-5" data-target="win-video">
+      <img src="icona.video.png" alt="" class="icona-img">
+      <span class="etichetta">ha ancora senso fare musica.</span>
     </button>
 
     <!-- FINESTRA CARTELLA 1 -->
     <section class="window" id="win-cartella1">
-    <div class="window-header">
-        <span>💿 fading memories from a place i used to love</span>
+      <div class="window-header">
+        <span class="window-title"><img src="icona.musica.png" alt="" class="header-icon-img"> fading memories from a place i used to love</span>
         <button class="close-btn" aria-label="Chiudi">✕</button>
-    </div>
-    <div class="window-body coming-soon-box">
-        <img src="copertina.jpg" alt="Cover for 'fading memories from a place i used to love'" class="cover-art">
-        <p class="coming-soon-text">Coming soon</p>
-    </div>
+      </div>
+      <div class="window-body coming-soon-box">
+        <img src="copertina.jpg" alt="fading memories from a place i used to love" class="cover-art">
+        <p class="coming-soon-text">fuori presto!</p>
+      </div>
     </section>
 
     <!-- FINESTRA CARTELLA 2 -->
     <section class="window" id="win-cartella2">
       <div class="window-header">
-        <span>📁 i hope you can hear the laughter from the next room</span>
+        <span class="window-title"><img src="icona.cartella.png" alt="" class="header-icon-img"> i hope you can hear the laughter from the next room</span>
         <button class="close-btn" aria-label="Chiudi">✕</button>
       </div>
       <div class="window-body">
         <div class="platform-list">
-          <a href="https://open.spotify.com/intl-it/album/7EqqmL6ecmDkI7AtP33uvm?si=x3EHYGKfTA2QT8jBf89zOQ" target="_blank" class="platform-link spotify">Spotify</a>
-          <a href="https://music.apple.com/it/album/i-hope-you-can-hear-the-laughter-from-the-next-room/1884965570" target="_blank" class="platform-link apple">Apple Music</a>
-          <a href="https://youtu.be/swMxhMxkD8U?si=UkKYhUvG1A_f9CaA" target="_blank" class="platform-link youtube">YouTube</a>
-          <a href="https://paradoxproductions.bandcamp.com/album/i-hope-you-can-hear-the-laughter-from-the-next-room" target="_blank" class="platform-link bandcamp">Bandcamp</a>
+          <a href="https://open.spotify.com/intl-it/album/7EqqmL6ecmDkI7AtP33uvm?si=x3EHYGKfTA2QT8jBf89zOQ" target="_blank" class="platform-link spotify">spotify</a>
+          <a href="https://music.apple.com/it/album/i-hope-you-can-hear-the-laughter-from-the-next-room/1884965570" target="_blank" class="platform-link apple">apple music</a>
+          <a href="https://youtu.be/swMxhMxkD8U?si=UkKYhUvG1A_f9CaA" target="_blank" class="platform-link youtube">youtube</a>
+          <a href="https://paradoxproductions.bandcamp.com/album/i-hope-you-can-hear-the-laughter-from-the-next-room" target="_blank" class="platform-link bandcamp">bandcamp</a>
         </div>
       </div>
     </section>
@@ -62,28 +74,27 @@
     <!-- FINESTRA CARTELLA 3 -->
     <section class="window" id="win-cartella3">
       <div class="window-header">
-        <span>📁 if you think life isn't that good, it's just because you're not paying enough attention.</span>
+        <span class="window-title"><img src="icona.cartella.png" alt="" class="header-icon-img"> if you think life isn't that good, it's just because you're not paying enough attention.</span>
         <button class="close-btn" aria-label="Chiudi">✕</button>
       </div>
       <div class="window-body">
         <div class="platform-list">
-          <a href="https://open.spotify.com/intl-it/album/7vF9sncMlpc5UA11yGomWF?si=kZ14-LSIT1W2VN7DUsqr3w" target="_blank" class="platform-link spotify">Spotify</a>
-          <a href="https://music.apple.com/it/album/if-you-think-life-isnt-that-good-its-just-because-youre/1784209374" target="_blank" class="platform-link apple">Apple Music</a>
-          <a href="https://youtube.com/playlist?list=PL75WMvmPcBzoSLzXjIhlf0TFViagsHWep&si=oQEiGUBDawXxOwt0" target="_blank" class="platform-link youtube">YouTube</a>
-          <a href="https://paradoxproductions.bandcamp.com/album/if-you-think-life-isnt-that-good-its-just-because-youre-not-paying-enough-attention" target="_blank" class="platform-link bandcamp">Bandcamp</a>
+          <a href="https://open.spotify.com/intl-it/album/7vF9sncMlpc5UA11yGomWF?si=kZ14-LSIT1W2VN7DUsqr3w" target="_blank" class="platform-link spotify">spotify</a>
+          <a href="https://music.apple.com/it/album/if-you-think-life-isnt-that-good-its-just-because-youre/1784209374" target="_blank" class="platform-link apple">apple music</a>
+          <a href="https://youtube.com/playlist?list=PL75WMvmPcBzoSLzXjIhlf0TFViagsHWep&si=oQEiGUBDawXxOwt0" target="_blank" class="platform-link youtube">youtube</a>
+          <a href="https://paradoxproductions.bandcamp.com/album/if-you-think-life-isnt-that-good-its-just-because-youre-not-paying-enough-attention" target="_blank" class="platform-link bandcamp">bandcamp</a>
         </div>
       </div>
     </section>
 
-    <!-- POPUP VIDEO APERTO ALL'INGRESSO -->
-    <section class="window window-video aperta" id="win-video">
+    <!-- FINESTRA VIDEO -->
+    <section class="window window-video" id="win-video">
       <div class="window-header">
-        <span>▶ Video</span>
+        <span class="window-title"><img src="icona.video.png" alt="" class="header-icon-img"> Video</span>
         <button class="close-btn" aria-label="Chiudi">✕</button>
       </div>
       <div class="window-body">
         <div class="video-container">
-          <!-- Sostituisci CODICE_VIDEO con l'ID del tuo video YouTube -->
           <iframe 
             id="youtube-iframe"
             src="https://www.youtube.com/embed/69P-XzqV7CU" 
@@ -92,22 +103,161 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
-        </iframe>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINESTRA BLOCCO NOTE (APERTA ALL'INGRESSO) -->
+    <section class="window window-notepad aperta" id="win-notepad">
+      <div class="window-header">
+        <span class="window-title"><img src="icona.note.png" alt="" class="header-icon-img"> paradox dreams</span>
+        <button class="close-btn" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="window-body notepad-body">
+        <p class="notepad-text">ciao! sono pietro d'autilia (paradox dreams) e questo è il mio spazio musicale e visivo.
+la mia musica è un diario, per chi con le parole non è poi tanto bravo, come me, che mi esprimo meglio dietro le note di un sintetizzatore.
+questo ne è l'archivio, trovi tutto nelle cartelle. buon ascolto.</p>
+
+        <hr class="notepad-divider">
+
+        <div class="notepad-socials">
+          <span class="socials-label">// dove trovarmi</span>
+          <div class="socials-grid">
+            <a href="https://www.instagram.com/paradox.beats/" target="_blank" rel="noopener noreferrer" class="social-tag">instagram</a>
+            <a href="https://open.spotify.com/artist/7FuzscBdTXfMTZTNvc99yF" target="_blank" rel="noopener noreferrer" class="social-tag">spotify</a>
+            <a href="https://www.youtube.com/@paradoxbeats" target="_blank" rel="noopener noreferrer" class="social-tag">youtube</a>
+            <a href="https://paradoxproductions.bandcamp.com" target="_blank" rel="noopener noreferrer" class="social-tag">bandcamp</a>
+            <a href="mailto:pedrodau.onthebeat@gmail.com" class="social-tag">email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINESTRA: TUTTE LE RELEASE -->
+    <section class="window" id="win-releases">
+      <div class="window-header">
+        <span class="window-title"><img src="icona.musica.png" alt="" class="header-icon-img"> tutta la mia musica</span>
+        <button class="close-btn" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="window-body">
+        <ul class="archive-list">
+          <li class="archive-item">
+            <div>
+              <strong>fading memories from a place i used to love</strong>
+              <span class="archive-meta">In arrivo</span>
+            </div>
+            <span class="archive-badge">SOON</span>
+          </li>
+          <li class="archive-item">
+            <div>
+              <strong>i hope you can hear the laughter from the next room</strong>
+              <span class="archive-meta">disco · 2026</span>
+            </div>
+            <a href="https://open.spotify.com/intl-it/album/7EqqmL6ecmDkI7AtP33uvm?si=x3EHYGKfTA2QT8jBf89zOQ" target="_blank" rel="noopener noreferrer" class="archive-link">ascolta ↗</a>
+          </li>
+          <li class="archive-item">
+            <div>
+              <strong>if you think life isn't that good, it's just because you're not paying enough attention.</strong>
+              <span class="archive-meta">disco · 2024</span>
+            </div>
+            <a href="https://open.spotify.com/intl-it/album/7vF9sncMlpc5UA11yGomWF?si=kZ14-LSIT1W2VN7DUsqr3w" target="_blank" rel="noopener noreferrer" class="archive-link">ascolta ↗</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FINESTRA: ACCESSO CON PASSWORD -->
+    <section class="window" id="win-rap">
+      <div class="window-header">
+        <span class="window-title"><img src="icona.lucchetto.png" alt="" class="header-icon-img"> area riservata</span>
+        <button class="close-btn" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="window-body">
+        <form id="rap-lock-form" class="lock-box">
+          <p class="lock-text">password:</p>
+          <div class="lock-row">
+            <input 
+              type="password" 
+              id="rap-password-input" 
+              class="lock-input" 
+              placeholder="Password..." 
+              autocomplete="off"
+              required
+            >
+            <button type="submit" class="lock-submit">entra!</button>
+          </div>
+          <p id="rap-error" class="lock-error" hidden>password errata. spiace.</p>
+        </form>
+
+        <p id="rap-unlocked-msg" class="lock-text" hidden>
+          ✓ cartelle sbloccate sul desktop.
+        </p>
+      </div>
+    </section>
+
+    <!-- ICONE SEGRETE (COMPARIRANNO DOPO LA PASSWORD) -->
+    <button class="app-icon pos-6 secret-icon" data-target="win-paradossoritmi" hidden>
+      <img src="icona.lucchetto.png" alt="" class="icona-img">
+      <span class="etichetta">PARADOSSO RITMO</span>
+    </button>
+
+    <button class="app-icon pos-7 secret-icon" data-target="win-swa" hidden>
+      <img src="icona.lucchetto.png" alt="" class="icona-img">
+      <span class="etichetta">S.W.A. MIXTAPE (DLC PACK)</span>
+    </button>
+
+    <!-- FINESTRA: PARADOSSORITMI -->
+    <section class="window" id="win-paradossoritmi">
+      <div class="window-header">
+        <span class="window-title"><img src="icona.lucchetto.png" alt="" class="header-icon-img"> PARADOSSO RITMO</span>
+        <button class="close-btn" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="window-body">
+        <div class="platform-list">
+          <a href="https://soundcloud.com/paradossoritmi/sets/paradosso-ritmo" target="_blank" rel="noopener noreferrer" class="platform-link">soundcloud</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINESTRA: SWA -->
+    <section class="window" id="win-swa">
+      <div class="window-header">
+        <span class="window-title"><img src="icona.lucchetto.png" alt="" class="header-icon-img"> S.W.A. MIXTAPE (DLC PACK)</span>
+        <button class="close-btn" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="window-body">
+        <div class="platform-list">
+          <a href="https://soundcloud.com/salentinianswithattitude/sets/s-w-a-mixtape-dlc-pack" target="_blank" rel="noopener noreferrer" class="platform-link">soundcloud</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- BARRA INFERIORE -->
+  <!-- BARRA INFERIORE + MENU START -->
   <footer class="taskbar">
     <div class="taskbar-left">
-      <div class="start-badge">paradox dreams</div>
-      <button class="taskbar-btn" data-target="win-video">▶ video</button>
+      <button type="button" class="start-btn" id="start-btn" aria-expanded="false">
+        paradox dreams
+      </button>
+
+      <nav class="start-menu" id="start-menu" aria-label="Menu principale">
+        <button type="button" class="start-item" data-target="win-releases">
+          <img src="icona.musica.png" alt="" class="menu-icon-img">
+          <span>tutta la mia musica</span>
+        </button>
+        <div class="start-divider"></div>
+        <button type="button" class="start-item start-item-secret" data-target="win-rap">
+          <img src="icona.lucchetto.png" alt="" class="menu-icon-img">
+          <span>area riservata</span>
+        </button>
+      </nav>
     </div>
+
     <div class="orologio" id="orologio">00:00</div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=9"></script>
 </body>
 </html>
